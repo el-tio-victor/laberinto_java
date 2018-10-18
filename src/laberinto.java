@@ -490,8 +490,14 @@ public class laberinto extends JFrame
 								
 						}
 						
-						for (int in=0;in<1000000000;in++)
-						{}/*Comentario*/	
+						/*for (int in=0;in<1000000000;in++)
+						{}Pequeño delay para ver el recorrido*/
+						try {
+							Thread.sleep(600);
+						}
+						catch(InterruptedException e) {
+							System.out.println(e.getMessage());
+						}
 						
 						
 						
